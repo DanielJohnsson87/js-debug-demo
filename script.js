@@ -10,15 +10,13 @@ var listNode = document.getElementsByClassName('list'),
  */
 function toggleAllItemColors() {
     [...listItems].forEach(function (item) {
-        item.classList.toggle('list__item--selected');
-
-        // var elementIsSelected = item.className.indexOf('list__item--selected') >= 0;
-        // console.log('Element is selected?', elementIsSelected);
-        // if(elementIsSelected) {
-        //     item.classList.remove('list__item--selected');
-        // } else {
-        //     item.classList.add('list__item--selected');
-        // }
+        // item.classList.toggle('list__item--selected');
+        var elementIsSelected = item.className.indexOf('list__item--selected') >= 0;
+        if(elementIsSelected) {
+            item.classList.remove('list__item--selected');
+        } else {
+            item.classList.add('list__item--selected');
+        }
     });
 }
 

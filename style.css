@@ -7,12 +7,16 @@ html,body {
     box-sizing: border-box;
 }
 
-.header {
+header {
     background: #343d46;
     padding:2rem 0;
     margin: 0 0 2rem 0;
     text-align: center;
     color: #efefef;
+}
+
+.menu {
+    display: none;
 }
 
 .list {
